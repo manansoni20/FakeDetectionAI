@@ -1,0 +1,36 @@
+Project: Fake Detection AI
+
+Project Summary:
+A project that detects fake posts by analyzing both text and images using AI. 
+The system uses a TextEncoder for text, an ImageEncoder for images, and a Fusion model 
+to combine them to predict whether a post is Real or Fake.
+
+Tech Stack:
+Python, PyTorch, Torchvision, Pandas, Pillow
+
+Features Implemented:
+- TextEncoder implemented and working
+- ImageEncoder implemented and working
+- Fusion model combines embeddings and gives predictions
+- CSV-based data input and output
+- Demo successfully predicts fake/real posts with confidence scores
+
+Sample Outputs:
+Text: Breaking news: AI is taking over!
+Image Path: data/images/img1.jpg
+Prediction: Real (confidence: 0.60)
+
+Text: Funny cat memes
+Image Path: data/images/img2.jpg
+Prediction: Real (confidence: 0.58)
+
+Text: Fake news alert
+Image Path: data/images/img3.jpg
+Prediction: Real (confidence: 0.62)
+
+Next Steps:
+- Train models on larger real datasets to improve accuracy
+- Handle more posts efficiently
+- Add interactive input or web UI
+- Possibly deploy as a small app or web service
+
